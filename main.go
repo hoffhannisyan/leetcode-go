@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+
+	"github.com/hoffhannisyan/leetcode/tasks"
 )
 
 func main() {
@@ -27,5 +29,11 @@ func main() {
 	// 	}
 	// }
 	// fmt.Print("]\n\n")
+
+	// --- LeetCode #3: Longest Substring Without Repeating Characters ---
+	s := "pwwkew"
+	length := tasks.LengthOfLongestSubstring(s)
+	fmt.Println("Longest Substring Length:", length)
+	fmt.Println()
 
 }

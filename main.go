@@ -87,13 +87,22 @@ func main() {
 
 	// --- LeetCode #8: String to Integer (atoi) ---
 
-	printTitle(8, "String to Integer (atoi)")
+	// printTitle(8, "String to Integer (atoi)")
 
-	fmt.Printf("Input: %q -> Output: %d\n", "42", tasks.MyAtoi("42"))
-	fmt.Printf("Input: %q -> Output: %d\n", "   -042", tasks.MyAtoi("   -042"))
-	fmt.Printf("Input: %q -> Output: %d\n", "1337c0d3", tasks.MyAtoi("1337c0d3"))
-	fmt.Printf("Input: %q -> Output: %d\n", "0-1", tasks.MyAtoi("0-1"))
-	fmt.Printf("Input: %q -> Output: %d\n", "words and 987", tasks.MyAtoi("words and 987"))
+	// fmt.Printf("Input: %q -> Output: %d\n", "42", tasks.MyAtoi("42"))
+	// fmt.Printf("Input: %q -> Output: %d\n", "   -042", tasks.MyAtoi("   -042"))
+	// fmt.Printf("Input: %q -> Output: %d\n", "1337c0d3", tasks.MyAtoi("1337c0d3"))
+	// fmt.Printf("Input: %q -> Output: %d\n", "0-1", tasks.MyAtoi("0-1"))
+	// fmt.Printf("Input: %q -> Output: %d\n", "words and 987", tasks.MyAtoi("words and 987"))
+
+	// --- LeetCode #9: Palindrome Number ---
+	printTitle(9, "Palindrome Number")
+
+	tests := []int{121, -121, 10, 12321, 0, 1221}
+
+	for _, t := range tests {
+		fmt.Printf("Input: %d -> Output: %v\n", t, tasks.IsPalindrome(t))
+	}
 
 }
 

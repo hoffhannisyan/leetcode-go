@@ -78,12 +78,22 @@ func main() {
 	// fmt.Printf("Input: %q, numRows = 1 -> Output: %q\n", "A", tasks.Convert("A", 1))
 
 	// --- LeetCode #7: Reverse Integer ---
-	printTitle(7, "Reverse Integer")
+	// printTitle(7, "Reverse Integer")
 
-	fmt.Printf("Input: %d -> Output: %d\n", 123, tasks.Reverse(123))
-	fmt.Printf("Input: %d -> Output: %d\n", -123, tasks.Reverse(-123))
-	fmt.Printf("Input: %d -> Output: %d\n", 120, tasks.Reverse(120))
-	fmt.Printf("Input: %d -> Output: %d\n", 1534236469, tasks.Reverse(1534236469)) // overflow -> 0
+	// fmt.Printf("Input: %d -> Output: %d\n", 123, tasks.Reverse(123))
+	// fmt.Printf("Input: %d -> Output: %d\n", -123, tasks.Reverse(-123))
+	// fmt.Printf("Input: %d -> Output: %d\n", 120, tasks.Reverse(120))
+	// fmt.Printf("Input: %d -> Output: %d\n", 1534236469, tasks.Reverse(1534236469)) // overflow -> 0
+
+	// --- LeetCode #8: String to Integer (atoi) ---
+
+	printTitle(8, "String to Integer (atoi)")
+
+	fmt.Printf("Input: %q -> Output: %d\n", "42", tasks.MyAtoi("42"))
+	fmt.Printf("Input: %q -> Output: %d\n", "   -042", tasks.MyAtoi("   -042"))
+	fmt.Printf("Input: %q -> Output: %d\n", "1337c0d3", tasks.MyAtoi("1337c0d3"))
+	fmt.Printf("Input: %q -> Output: %d\n", "0-1", tasks.MyAtoi("0-1"))
+	fmt.Printf("Input: %q -> Output: %d\n", "words and 987", tasks.MyAtoi("words and 987"))
 
 }
 
